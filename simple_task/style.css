@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Quicksand', sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#f8f5f0;
+
+    overflow:hidden;
+    position:relative;
+}
+
+/* Background */
+
+.blob{
+    position:absolute;
+    border-radius:50%;
+    z-index:0;
+}
+
+.blob1{
+    width:320px;
+    height:320px;
+
+    background:#ddd3c7;
+
+    opacity:0.3;
+
+    top:-100px;
+    right:-100px;
+}
+
+.blob2{
+    width:260px;
+    height:260px;
+
+    background:#e9e1d7;
+
+    opacity:0.4;
+
+    bottom:-70px;
+    left:-70px;
+}
+
+.line{
+    position:absolute;
+    border:3px solid #2d2d2d;
+    border-radius:100px;
+    opacity:0.08;
+}
+
+.line1{
+    width:180px;
+    height:60px;
+
+    top:15%;
+    left:10%;
+
+    transform:rotate(-15deg);
+}
+
+.line2{
+    width:220px;
+    height:80px;
+
+    bottom:15%;
+    right:10%;
+
+    transform:rotate(10deg);
+}
+
+/* Main Card */
+
+.container{
+    width:550px;
+
+    background:#fffdf8;
+
+    border:2px solid #2d2d2d;
+
+    border-radius:24px;
+
+    padding:32px;
+
+    box-shadow:
+        8px 8px 0 rgba(45,45,45,0.12);
+
+    position:relative;
+    z-index:10;
+}
+
+h1{
+    font-size:2.4rem;
+    font-weight:600;
+
+    color:#2d2d2d;
+
+    margin-bottom:6px;
+}
+
+.subtitle{
+    color:#777;
+    margin-bottom:25px;
+}
+
+/* Input Section */
+
+.input-section{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+input{
+    flex:1;
+
+    padding:14px;
+
+    border:2px solid #2d2d2d;
+    border-radius:14px;
+
+    font-size:1rem;
+    font-family:inherit;
+
+    outline:none;
+}
+
+input:focus{
+    box-shadow:0 0 0 4px rgba(0,0,0,0.05);
+}
+
+#addBtn{
+    background:#2d2d2d;
+    color:white;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:14px 20px;
+
+    cursor:pointer;
+
+    font-family:inherit;
+    font-weight:600;
+
+    transition:0.2s;
+}
+
+#addBtn:hover{
+    transform:translateY(-2px);
+}
+
+/* Tasks */
+
+ul{
+    list-style:none;
+}
+
+li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:14px;
+    margin-bottom:12px;
+
+    border:1.5px solid #dddddd;
+    border-radius:16px;
+
+    background:white;
+
+    transition:0.2s;
+}
+
+li:hover{
+    transform:translateX(4px);
+}
+
+.completed{
+    text-decoration:line-through;
+    opacity:0.55;
+}
+
+.buttons{
+    display:flex;
+    gap:8px;
+}
+
+.complete-btn,
+.delete-btn{
+    border:none;
+
+    border-radius:10px;
+
+    padding:8px 12px;
+
+    font-family:inherit;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.2s;
+}
+
+.complete-btn{
+    background:#dcead9;
+}
+
+.complete-btn:hover{
+    transform:scale(1.05);
+}
+
+.delete-btn{
+    background:#f3d7d7;
+}
+
+.delete-btn:hover{
+    transform:scale(1.05);
+}
